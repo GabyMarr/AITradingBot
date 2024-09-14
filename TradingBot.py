@@ -96,8 +96,8 @@ class MLTrader(Strategy):
                 self.last_trade = "sell"
 
 # df.index = df.index.tz_convert('utc')
-startDate = datetime(2023, 5, 20) #Y/M/D
-endDate = datetime(2024, 5, 31) #Y/M/D
+startDate = datetime(2020, 1, 31) #Y/M/D
+endDate = datetime(2023, 12, 31) #Y/M/D
 
 broker = Alpaca(ALPACA_CREDS)
 strategy = MLTrader(name = "mlStrat", broker = broker, parameters = {"symbol":"SPY", "cash_at_risk": 0.5})
